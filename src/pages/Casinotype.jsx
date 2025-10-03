@@ -127,7 +127,7 @@ const Casinotype = () => {
   };
 
   return (
-    <div className="max-w-7xl mx-auto font-sans text-lg text-gray-700">
+    <div className="max-w-7xl mx-auto font-sans text-lg text-gray-700 mt-6">
       <Helmet
         title={content.pagetitle}
         description={content.description}
