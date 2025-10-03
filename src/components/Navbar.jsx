@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
  const links = [
       {
@@ -33,14 +34,14 @@ import React from 'react';
         </button>
         <div className="absolute hidden group-hover:block group-focus-within:block bg-gray-100 border border-gray-300 rounded-lg shadow-xl mt-3 w-max max-w-[100vw] transform opacity-0 group-hover:opacity-100 group-focus-within:opacity-100 transition-all duration-300 pointer-events-none group-hover:pointer-events-auto group-focus-within:pointer-events-auto">
           {link.children.map((subLink) => (
-            <a
+            <Link 
               key={subLink.label}
-              href={subLink.href}
+              to={subLink.href}
               className="block px-5 py-1 text-gray-800 hover:bg-gray-200 hover:text-gray-900 rounded-lg transition-colors duration-200"
               onClick={closeMenu}
             >
               {subLink.label}
-            </a>
+            </Link>
           ))}
         </div>
       </div>
@@ -63,14 +64,14 @@ import React from 'react';
           {isSubMenuOpen && (
             <div className="flex flex-col mt-2">
               {link.children.map((subLink) => (
-                <a
+                <Link
                   key={subLink.label}
                   href={subLink.href}
                   className="block px-5 py-1 text-gray-200 hover:bg-gray-500 hover:text-gray-100 rounded-lg transition-colors duration-200"
                   onClick={closeMenu}
                 >
                   {subLink.label}
-                </a>
+                </Link>
               ))}
             </div>
           )}
@@ -114,9 +115,9 @@ import React from 'react';
         <nav className="bg-gray-200 border-b border-gray-400 p-6 sticky top-0 z-50">
           <div className="container mx-auto flex justify-between items-center">
             <div className="flex items-center">
-              <a href="/" className="text-gray-800 font-extrabold text-3xl tracking-tight">
+              <Link href="/" className="text-gray-800 font-extrabold text-3xl tracking-tight">
                 <span>Slotrap</span>
-              </a>
+              </Link>
             </div>
             <div className="md:hidden">
               <button
@@ -140,13 +141,13 @@ import React from 'react';
                 link.children ? (
                   <DropdownMenu key={link.label} link={link} closeMenu={closeMenu} />
                 ) : (
-                  <a
+                  <Link
                     key={link.label}
                     href={link.href}
                     className="text-gray-800 hover:text-gray-500 font-medium text-lg transition-colors duration-200"
                   >
                     {link.label}
-                  </a>
+                  </Link>
                 )
               )}
             </div>
@@ -171,14 +172,14 @@ import React from 'react';
                   link.children ? (
                     <MobileDropdownMenu key={link.label} link={link} closeMenu={closeMenu} />
                   ) : (
-                    <a
+                    <Link
                       key={link.label}
                       href={link.href}
                       className="block text-gray-200 hover:text-gray-400 font-medium text-lg"
                       onClick={closeMenu}
                     >
                       {link.label}
-                    </a>
+                    </Link>
                   )
                 )}
               </div>
