@@ -1,0 +1,6 @@
+
+User-agent: *
+Allow: /
+Disallow: /scripts/
+
+Sitemap: https://slotrap.com//sitemap.xml
