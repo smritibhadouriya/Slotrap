@@ -66,7 +66,7 @@ import { Link } from 'react-router-dom';
               {link.children.map((subLink) => (
                 <Link
                   key={subLink.label}
-                  href={subLink.href}
+                  to={subLink.href}
                   className="block px-5 py-1 text-gray-200 hover:bg-gray-500 hover:text-gray-100 rounded-lg transition-colors duration-200"
                   onClick={closeMenu}
                 >
@@ -115,7 +115,7 @@ import { Link } from 'react-router-dom';
         <nav className="bg-gray-200 border-b border-gray-400 p-6 sticky top-0 z-50">
           <div className="container mx-auto flex justify-between items-center">
             <div className="flex items-center">
-              <Link href="/" className="text-gray-800 font-extrabold text-3xl tracking-tight">
+              <Link to="/" className="text-gray-800 font-extrabold text-3xl tracking-tight">
                 <span>Slotrap</span>
               </Link>
             </div>
@@ -143,7 +143,7 @@ import { Link } from 'react-router-dom';
                 ) : (
                   <Link
                     key={link.label}
-                    href={link.href}
+                    to={link.href}
                     className="text-gray-800 hover:text-gray-500 font-medium text-lg transition-colors duration-200"
                   >
                     {link.label}
@@ -174,7 +174,7 @@ import { Link } from 'react-router-dom';
                   ) : (
                     <Link
                       key={link.label}
-                      href={link.href}
+                      to={link.href}
                       className="block text-gray-200 hover:text-gray-400 font-medium text-lg"
                       onClick={closeMenu}
                     >
