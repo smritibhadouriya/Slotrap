@@ -151,7 +151,7 @@ const Casinotype = () => {
      
       <Allcasino />
       <AllCasinoDetail />
-      <Comparison />
+     <Comparison />
       <Faqndetails />
     </div>
   );
