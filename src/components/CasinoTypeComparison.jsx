@@ -8,7 +8,7 @@ import casino6 from '../assets/image/casino6.jpg';
 import casino8 from '../assets/image/casino8.jpg';
 import casino9 from '../assets/image/casino9.jpg';
 
-const Comparison = () => {
+const CasinoTypeComparison = () => {
   const location = useLocation();
   const pathname = location.pathname;
 
@@ -381,4 +381,4 @@ const Comparison = () => {
   );
 };
 
-export default Comparison;
+export default CasinoTypeComparison;

@@ -5,7 +5,7 @@ import AllCasinoDetail from '../components/AllCasinoDetail';
 import Aboutauthor from '../components/Aboutauthor';
 import Allcasino from '../components/Allcasino';
 import Faqndetails from '../components/Faqndetails';
-import Comparison from '../components/Comparison';
+import CasinoTypeComparison from '../components/CasinoTypeComparison';
 import casino3 from '../assets/image/casino3.jpg';
 import casino4 from '../assets/image/casino4.jpg';
 import casino5 from '../assets/image/casino5.jpg';
@@ -151,7 +151,7 @@ const Casinotype = () => {
      
       <Allcasino />
       <AllCasinoDetail />
-     <Comparison />
+     <CasinoTypeComparison />
       <Faqndetails />
     </div>
   );
